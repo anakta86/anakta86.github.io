@@ -7,57 +7,82 @@
         <title>Ana Cata</title>
         <!--Permite colocar el logo en la pestaña del navegador-->
         <link rel="icon" type="/image.png" href="https://gitlab.com/ktalina.va/imagenes/uploads/72efc2230b86fd4caf7e475a336050a7/image.png">
+        <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
+        <!--Diseños externos desde una carpeta que llamaos CSS y un archivo estilos.css-->
+        <link rel="stylesheet" href="CSS/estilos.css">
+        <!--agregar estilo interno es mas recomedado que el estido en line argumentado en atributo del hear del boy-->
+        <!--<style>     
+            header{ 
+                background: green;
+            }
+        </style>-->
     </head>
     <body>
-        <header>
+        <!--<header style= "color:red; background: blue;"> no es recomendable usarlo aca por que estamos combinado estilos que no corresponde a html-->
+        <header class="header">
             <div>
 <!---->
-                <figure>
+                <figure class="logo">
                     <img src="https://gitlab.com/ktalina.va/imagenes/uploads/72efc2230b86fd4caf7e475a336050a7/image.png" alt="logo">
                 </figure>
-            <nav>
+            <nav class="menu">
                 <ol> <!--Ordenar en lista-->
                     <li> 
-                        <!--a es la etiqueta de angcla y con el atributo href="enlace a donde va como hipervinculo y el curso cambia a manito, con el # lo pone de un color azul"-->
-                        <a href="#"> Portafolio</a>
+                        <!--a es la etiqueta de ancla y con el atributo href="enlace a donde va como hipervinculo y el curso cambia a manito, con el # lo pone de un color azul"-->
+                        <!--# significa que el enlace es interno y se debe especificar un id a la sección que a la que se quiere llevar-->
+                        <a class="link" href="#portafolio"> Portafolio</a>
                     </li>
                     <li>
-                        <a href="#"> Experiencia</a>
+                        <a class="link" href="#diplomas"> Experiencia</a>
                     </li>
                     <li>
-                        <a href="#"> Trabajemos juntos</a>
+                        <a class="link" href="#contacto"> Trabajemos juntos</a>
                     </li>
                 </ol>
             </nav>
         </header>
-           <section>
+           <section class="hero">
                <h1>Hola! Soy <strong>Ana Catalina Vargas..</strong> el <Br/> <strong>aprendizaje</strong> de nuevas tecnologias<Br/> es mi <strong>Objetivo</strong>
             </h1>
-            <img src="https://gitlab.com/ktalina.va/imagenes/uploads/d4711cdc01d3e744512778f511d5c469/image.png" width="500" height="" alt="imagen principal del sitio">  <!--width permite redimmecionar la imagen-->
+            <!-- <img src="https://gitlab.com/ktalina.va/imagenes/uploads/d4711cdc01d3e744512778f511d5c469/image.png" width="500" height="" alt="imagen principal del sitio">  width permite redimmecionar la imagen -->
            </section>
-           <section>
+           <section id="portafolio" class="portfolio">
                <h2> Portafolio (proyectos destacados)</h2>
-               <article>
-                   <h3>CREAR PORTAFOLIO</h3>
-                   <h6>GitHub Pages</h6>
-                   <p><small><strong>Fecha:</strong> 16/01/2021</small></p>
-                   <p><small><strong>Puedes verlo en:</strong> https://anakta86.github.io/</small></p>
-                   <p>En este portafolio podras encontrar todo la información sobre mi</p>
-                   <img src="" alt="imagen del github pages">
-               </article>
-           </section>
-           <section>
-               <h2>MÁS SOBRE MI</h2>
-               <article>
-                   <figure>
-                       <img src="https://gitlab.com/ktalina.va/imagenes/uploads/3ecdbc38f6f17daabe456120979441cd/image.png" width="500">
+               <article class="project" >
+                   <div class="project-details">
+                       <h3 class="project-title">CREAR PORTAFOLIO</h3>
+                       <h6 class="project-course">GitHub Pages</h6>
+                       <p class="project-date"><small><strong>Fecha:</strong> 16/01/2021</small></p>
+                       <p class="project-url"><small><strong>Puedes verlo en:</strong> https://anakta86.github.io/</small></p>
+                       <p class="project-description">En este portafolio podras encontrar todo la información sobre miiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+                   </div>
+                   <figure class="project-imageContainer">
+                    <img class="project-image" src="https://gitlab.com/ktalina.va/imagenes/uploads/3ecdbc38f6f17daabe456120979441cd/image.png" width="500" alt="imagen del github pages">
                    </figure>
-                   <h3>Año 2020</h3>
-                   <p>Un año fuera de lo común. año de pandemia</p>
-                   <a>Ver</a>
+                   
                </article>
            </section>
-           <section>seccion contactos</section>
-           <footer>footer</footer>
+           <section id = "diplomas">
+               <h2>MÁS SOBRE MI</h2>
+               <article class="event">
+                   <figure class="event-imageContainer">
+                       <img class="event-image"src="https://gitlab.com/ktalina.va/imagenes/uploads/0c19893e271f9337a27db7c6f5c747fd/image.png" width="500">
+                   </figure>
+                   <h3 class="event-title">Año 2020</h3>
+                   <p class="event-description">Un año fuera de lo común. año de pandemia</p>
+                   <!--llevar a un enlace externo youtebe href="enlace", o otro atributo si se quiere que abra en otra pagina  target="_blank"-->
+                   <a class="event-url" href="https://www.youtube.com/watch?v=NB-S4hy7TNo" target="_blank">Ver</a>
+               </article>
+           </section>
+           <section id = "contacto" class="contact"> <!--sección donde vamos a tener un formulario-->
+            <form action="/suscripcion/" class="form-email"></form>
+            <h3>¿Creamos algun juntos?</h3>
+            <!--otro atributo del input es poner un valor por defecto   <input type="submit" value="@gmail"> el atributo placeholder es para colocar un prevalor-->
+            <input type="texto" placeholder="Déjame tu email">
+             <!--otra forma de agregar placeholder ants del boton es   <label for=""> Dejeme tu email</label>-->
+            <!--otra forma de agregar boton  <input type="submit" value="texto del boton>-->
+            <button>Enviar</button>
+           </section>
+           <footer class="footer">footer</footer>
     </body>
 </html>
