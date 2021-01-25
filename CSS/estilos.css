@@ -35,6 +35,7 @@ body{
 
 body{
     font-family:'Source Sans Pro', sans-serif;
+    margin: 0;
 }
 
 /* definir otro tipo de fuete  en un selector especifico dentro de body */
@@ -43,6 +44,7 @@ body{
 gris claro  #626262
 bacground gris #1b2127
 celeste #026fff */
+
 
 
 h1,
@@ -56,6 +58,7 @@ h6{
     /* font-style: italic; */
 } 
 
+
 /* agregar fuentes que no estan por defecto fonts.google.com y agregar el link en el archivo html */
 /* alto de linea del tituli h1 */
 
@@ -64,6 +67,10 @@ h1{
     line-height: 1.5em;
     letter-spacing: -.2px;
     color: white;
+    /* margin: top right bottom left resumido margin: top-bottom right-left  o margin: 0 , auto se centra */
+    /* margin: 0px 500px 0px 0px; */
+    margin: 0 ;
+
     /* text-transform: lowercase: todo en minuscula; */
     /* text-decoration: dashed; subrrayar */
 }
@@ -72,6 +79,16 @@ h1 strong{
     color: #026fff;
 }
 
+h2 {
+    color: #026fff;
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro', sans-serif ;
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 40px;
+}
+
+
 .hero {
     height: 300px;
     background-image: url('https://gitlab.com/ktalina.va/imagenes/uploads/d4711cdc01d3e744512778f511d5c469/image.png') ;
@@ -79,7 +96,32 @@ h1 strong{
     background-size: 500px 300px;
     background-repeat: no-repeat;
     background-position-x: right;
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
 }
+
+
+.portfolio{
+    background-color: #c4bdbd8e;
+    padding: 20px;
+}
+.project {
+    /* border-top:10px solid red;
+    border-right:10px solid red;
+    border-left:10px solid red;
+    border-bottom:10px solid red; */
+    /* border-color: red;
+    border-width: 15px;
+    border-style: solid; */
+    border: 1px solid gray;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    /* margin: 10px; */
+    padding: 20px;
+    background: white;
+}
+
 .project-details {
     width: 500px;
 }
@@ -90,13 +132,58 @@ h1 strong{
 .header {
     background-color: #1b2127;
     color: white;
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    align-items: center;
+}
+
+ol,
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+figure {
+    margin: 0;
+    }
+
+.menu {
+height: inherit;
+}
+
+
+.header ol {
+    display: flex;
+    height: inherit;
+}
+
+.header ol li {
+    height: inherit;
 }
 
 .header a{ 
     color: white;
     text-decoration: none;
+    height: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
 }
 
 /* gris oscuro #1d252c
 gris claro  #626262
 bacground gris #1b2127 */
+
+.footer {
+    color: white;
+    background-color: #1b2127;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer img {
+    vertical-align: middle;
+
+}
