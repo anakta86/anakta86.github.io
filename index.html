@@ -20,46 +20,39 @@
     <body>
         <!--<header style= "color:red; background: blue;"> no es recomendable usarlo aca por que estamos combinado estilos que no corresponde a html-->
         <header class="header">
+            <div class="container">
                 <figure class="logo">
                     <img src="https://gitlab.com/ktalina.va/imagenes/uploads/5fc8a78729c00105654762f713316dd6/image.png" height="50" alt="logo">
                 </figure>
-            <nav class="menu">
-                <ol> <!--Ordenar en lista-->
-                    <li> 
+                <nav class="menu">
+                    <ol> <!--Ordenar en lista-->
+                        <li> 
                         <!--a es la etiqueta de ancla y con el atributo href="enlace a donde va como hipervinculo y el curso cambia a manito, con el # lo pone de un color azul"-->
                         <!--# significa que el enlace es interno y se debe especificar un id a la sección que a la que se quiere llevar-->
-                        <a class="link" href="#portafolio"> Portafolio</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#diplomas"> Experiencia</a>
-                    </li>
-                    <li>
-                        <a class="link" href="#contacto"> Trabajemos juntos</a>
-                    </li>
-                </ol>
-            </nav>
+                            <a class="link" href="#portafolio"> Portafolio</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#diplomas"> Experiencia</a>
+                        </li>
+                        <li>
+                            <a class="link" href="#contacto"> Trabajemos juntos</a>
+                        </li>
+                    </ol>
+                </nav>
+            </div>
         </header>
-           <section class="hero">
-               <h1>Hola! Soy <strong>Ana Catalina Vargas..</strong> el <Br/> <strong>aprendizaje</strong> de nuevas tecnologias<Br/> es mi <strong>Objetivo</strong>
-            </h1>
-            <!-- <img src="https://gitlab.com/ktalina.va/imagenes/uploads/d4711cdc01d3e744512778f511d5c469/image.png" width="500" height="" alt="imagen principal del sitio">  width permite redimmecionar la imagen -->
-           </section>
-           <section id="portafolio" class="portfolio">
-               <h2> Portafolio (proyectos destacados)</h2>
-               <article class="project" >
-                   <div class="project-details">
-                       <h3 class="project-title">CREAR PORTAFOLIO</h3>
-                       <h6 class="project-course">GitHub Pages</h6>
-                       <p class="project-date"><small><strong>Fecha:</strong> 16/01/2021</small></p>
-                       <p class="project-url"><small><strong>Puedes verlo en:</strong> https://anakta86.github.io/</small></p>
-                       <p class="project-description">En este portafolio podras encontrar todo la información sobre miiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
-                   </div>
-                   <figure class="project-imageContainer">
-                    <img class="project-image" src="https://gitlab.com/ktalina.va/imagenes/uploads/3ecdbc38f6f17daabe456120979441cd/image.png" width="500" alt="imagen del github pages">
-                   </figure>
-                   
-               </article>
-               <article class="project" >
+        <section class="hero">
+            <div class="container">
+                <h1>Hola! Soy <strong>Ana Catalina Vargas..</strong> el <Br/> <strong>aprendizaje</strong> de nuevas tecnologias<Br/> es mi <strong>Objetivo</strong>
+                </h1>
+                <!-- width permite redimesionar la imagen -->
+                <img class="hero-image" src="https://gitlab.com/ktalina.va/imagenes/uploads/d4711cdc01d3e744512778f511d5c469/image.png" width="500" height="300" alt="imagen principal del sitio">
+            <div>
+        </section>
+        <section id="portafolio" class="portfolio">
+            <div class="container">
+                <h2> Portafolio (proyectos destacados)</h2>
+                <article class="project" >
                 <div class="project-details">
                     <h3 class="project-title">CREAR PORTAFOLIO</h3>
                     <h6 class="project-course">GitHub Pages</h6>
@@ -67,40 +60,100 @@
                     <p class="project-url"><small><strong>Puedes verlo en:</strong> https://anakta86.github.io/</small></p>
                     <p class="project-description">En este portafolio podras encontrar todo la información sobre miiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
                 </div>
-                <figure class="project-imageContainer">
-                 <img class="project-image" src="https://gitlab.com/ktalina.va/imagenes/uploads/3ecdbc38f6f17daabe456120979441cd/image.png" width="500" alt="imagen del github pages">
-                </figure>
-                
-            </article>
-           </section>
-           <section id = "diplomas">
-               <h2>MÁS SOBRE MI</h2>
+                   <figure class="project-imageContainer">
+                        <img class="project-image" src="https://gitlab.com/ktalina.va/imagenes/uploads/3ecdbc38f6f17daabe456120979441cd/image.png" width="500" alt="imagen del github pages">
+                   </figure>
+                </article>
+                <article class="project" >
+                    <div class="project-details">
+                     <h3 class="project-title">CREAR PORTAFOLIO</h3>
+                     <h6 class="project-course">GitHub Pages</h6>
+                     <p class="project-date"><small><strong>Fecha:</strong> 16/01/2021</small></p>
+                     <p class="project-url"><small><strong>Puedes verlo en:</strong> https://anakta86.github.io/</small></p>
+                        <p class="project-description">En este portafolio podras encontrar todo la información sobre miiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiiii</p>
+                    </div>
+                    <figure class="project-imageContainer">
+                    <img class="project-image" src="https://gitlab.com/ktalina.va/imagenes/uploads/3ecdbc38f6f17daabe456120979441cd/image.png" width="500" alt="imagen del github pages">
+                    </figure>   
+                </article>
+            </div>
+        </section>
+        <div class="container">
+           <h2 class="event-list-title">MÁS SOBRE MI</h2>
+        </div>
+        <section id = "diplomas" class="event-list"> 
+            <div>
                <article class="event">
                    <figure class="event-imageContainer">
                        <img class="event-image"src="https://gitlab.com/ktalina.va/imagenes/uploads/0c19893e271f9337a27db7c6f5c747fd/image.png" width="500">
                    </figure>
-                   <h3 class="event-title">Año 2020</h3>
-                   <p class="event-description">Un año fuera de lo común. año de pandemia</p>
-                   <!--llevar a un enlace externo youtebe href="enlace", o otro atributo si se quiere que abra en otra pagina  target="_blank"-->
-                   <a class="event-url" href="https://www.youtube.com/watch?v=NB-S4hy7TNo" target="_blank">Ver</a>
+                   <div class="event-details">
+                        <h3 class="event-title">Año 2020</h3>
+                        <p class="event-description">Un año fuera de lo común. año de pandemia</p>
+                        <!--llevar a un enlace externo youtebe href="enlace", o otro atributo si se quiere que abra en otra pagina  target="_blank"-->
+                        <a class="event-url" href="https://www.youtube.com/watch?v=NB-S4hy7TNo" target="_blank">Ver</a>
+                    </div>
                </article>
-           </section>
-           <section id = "contacto" class="contact"> <!--sección donde vamos a tener un formulario-->
-            <form action="/suscripcion/" class="form-email"></form>
-            <h3>¿Creamos algun juntos?</h3>
-            <!--otro atributo del input es poner un valor por defecto   <input type="submit" value="@gmail"> el atributo placeholder es para colocar un prevalor-->
-            <input type="texto" placeholder="Déjame tu email">
-             <!--otra forma de agregar placeholder ants del boton es   <label for=""> Dejeme tu email</label>-->
-            <!--otra forma de agregar boton  <input type="submit" value="texto del boton>-->
-            <button>Enviar</button>
-           </section>
-           <footer class="footer">
+               <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image"src="https://gitlab.com/ktalina.va/imagenes/uploads/0c19893e271f9337a27db7c6f5c747fd/image.png" width="500">
+                </figure>
+                <div class="event-details">
+                    <h3 class="event-title">Año 2020</h3>
+                    <p class="event-description">Un año fuera de lo común. año de pandemia</p>
+                    <!--llevar a un enlace externo youtebe href="enlace", o otro atributo si se quiere que abra en otra pagina  target="_blank"-->
+                    <a class="event-url" href="https://www.youtube.com/watch?v=NB-S4hy7TNo" target="_blank">Ver</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image"src="https://gitlab.com/ktalina.va/imagenes/uploads/0c19893e271f9337a27db7c6f5c747fd/image.png" width="500">
+                </figure>
+                <div class="event-details">
+                    <h3 class="event-title">Año 2020</h3>
+                    <p class="event-description">Un año fuera de lo común. año de pandemia</p>
+                    <!--llevar a un enlace externo youtebe href="enlace", o otro atributo si se quiere que abra en otra pagina  target="_blank"-->
+                    <a class="event-url" href="https://www.youtube.com/watch?v=NB-S4hy7TNo" target="_blank">Ver</a>
+                </div>
+            </article>
+            <article class="event">
+                <figure class="event-imageContainer">
+                    <img class="event-image"src="https://gitlab.com/ktalina.va/imagenes/uploads/0c19893e271f9337a27db7c6f5c747fd/image.png" width="500">
+                </figure>
+                <div class="event-details">
+                    <h3 class="event-title">Año 2020</h3>
+                    <p class="event-description">Un año fuera de lo común. año de pandemia</p>
+                    <!--llevar a un enlace externo youtebe href="enlace", o otro atributo si se quiere que abra en otra pagina  target="_blank"-->
+                    <a class="event-url" href="https://www.youtube.com/watch?v=NB-S4hy7TNo" target="_blank">Ver</a>
+                </div>
+            </article>
+            </div>
+        </section>
+        <section id = "contacto" class="contact"> <!--sección donde vamos a tener un formulario-->
+            <div class="container">
+                <form action="/suscripcion/" class="form-email">
+                     <h3>¿Creamos algun juntos?</h3>
+                     <!--otro atributo del input es poner un valor por defecto   <input type="submit" value="@gmail"> el atributo placeholder es para colocar un prevalor-->
+                     <input type="texto" placeholder="Déjame tu email">
+                      <!--otra forma de agregar placeholder ants del boton es   <label for=""> Dejeme tu email</label>-->
+                     <!--otra forma de agregar boton  <input type="submit" value="texto del boton>-->
+                     <button>Enviar</button>
+                </form>
+                <div class="social">
+                    <a href="url" class="social-link twitter"></a>
+                    <a href="url" class="social-link facebook"></a>
+                    <a href="url" class="social-link github"></a>
+                    <a href="url" class="social-link instagram"></a>
+                </div>
+            </div>
+        </section>
+        <footer class="footer">
                <div>
                    <p>Curso desarrollo Web 2021 <img src="" alt="logo que quiero"><imag/p>
                </div>
                <div>
-                   <p> Diseñaro con <\3 by <a>href="@hhdhdhdhd"<a/>@iiiiiii </p>
+                   <p> Diseñado con <\3 by <a>href="@hhdhdhdhd"<a/>@iiiiiii </p>
                </div>
-           </footer>
+        </footer>
     </body>
 </html>
