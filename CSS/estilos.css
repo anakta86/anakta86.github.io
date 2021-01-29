@@ -64,7 +64,7 @@ h6{
 
 h1{
     font-size: 40px;
-    line-height: 1.5em;
+    line-height: 1.5;
     letter-spacing: -.2px;
     color: white;
     /* margin: top right bottom left resumido margin: top-bottom right-left  o margin: 0 , auto se centra */
@@ -104,10 +104,9 @@ h2 {
 
 .hero-image {
     object-fit: cover;
-    width: 500px;
+    /* width: 500px;
     height: 300px;
-    justify-content: space-between;
-
+    justify-content: space-between; */
 }
 
 
@@ -148,6 +147,10 @@ h2 {
     font-size: 20px;
 }
 
+.project strong {
+    font-family: 'Fjalla One', sans-serif;
+}
+
 .project-title {
     font-size: 30px;
     margin-top: 0;
@@ -165,9 +168,9 @@ h2 {
     background-color: #1b2127;
     color: white;
     display: flex;
-    justify-content: space-between;
     height: 70px;
     align-items: center;
+    justify-content: space-between;
 }
 
 ol,
@@ -181,27 +184,47 @@ figure {
     margin: 0;
     }
 
-.menu {
-height: inherit;
+.header a{ 
+        color: white;
+        text-decoration: none;
+        /* height: inherit;
+        display: flex;
+        align-items: center;
+        padding: 0 10px; */
 }
 
+.menu {
+         height: inherit;
+ }
 
 .header ol {
     display: flex;
     height: inherit;
 }
 
+
+
 .header ol li {
     height: inherit;
 }
 
 .header a{ 
-    color: white;
-    text-decoration: none;
-    height: inherit;
     display: flex;
     align-items: center;
+    height: inherit;
     padding: 0 10px;
+}
+
+.flexbox {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    border: 1px solid red;
 }
 
 /* gris oscuro #1d252c
@@ -212,6 +235,7 @@ bacground gris #1b2127 */
     color: white;
     background-color: #1b2127;
     display: flex;
+    align-items: center;
     justify-content: space-between;
 }
 
@@ -219,6 +243,11 @@ bacground gris #1b2127 */
     vertical-align: middle;
 
 }
+
+.footer a {
+    color: white;
+}
+
 .event-list {
     display: flex;
     flex-wrap: wrap;
@@ -257,10 +286,10 @@ bacground gris #1b2127 */
 }
 
 .event-url  {
-    border: 1px solid #056fff;
+    color: #056fff;
+    border: 1px solid;
     padding: 5px 20px;
     text-decoration: none;
-    color: #056fff ;
     border-radius: 5px;
 }
 
@@ -282,57 +311,58 @@ bacground gris #1b2127 */
     display: inline-block;
     width: 50px;
     height: 50px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     margin:  0 10px;
+    background-size: 50px 50px;
 }
 
 .social-link.twitter {
     background-image: url(https://gitlab.com/ktalina.va/imagenes/uploads/c58f91f8077478e71d173809cd0db03c/image.png);
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
+    /* background-size: 50px 50px;
+    background-repeat: no-repeat; */
 }
 
 .social-link.facebook {
     background-image: url(https://gitlab.com/ktalina.va/imagenes/uploads/2ea1a60a8e84001689f3a0966d382b6d/image.png);
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
+    /* background-size: 50px 50px;
+    background-repeat: no-repeat; */
 }
 .social-link.github {
     background-image: url(https://gitlab.com/ktalina.va/imagenes/uploads/69cf7654a4f4ba3ad326f0f763a97801/image.png);
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
+    /* background-size: 50px 50px;
+    background-repeat: no-repeat; */
 }
 .social-link.instagram {
     background-image: url(https://gitlab.com/ktalina.va/imagenes/uploads/2d334f01954b4f8f754049eeefc4e8dd/image.png);
-    background-size: 50px 50px;
-    background-repeat: no-repeat;
+    /* background-size: 50px 50px;
+    background-repeat: no-repeat; */
 }
 
 .form-email input {
     border-color: gray;
-    border-radius: 5px;
     border-style: solid;
-    padding: 5px 20px 5px 25px;
+    border-radius: 5px; 
+    padding: 5px 20px 10px 25px;
     background-image: url(https://gitlab.com/ktalina.va/imagenes/uploads/a566a3f0fc553f2905ebfb0c9999bf75/image.png);
+    background-size: 15px 15px;
     background-repeat: no-repeat;
-    background-size: 20px 20px;
     background-position-y: center;
     background-position-x: 5px;
 }
 
 .form-email button {
     display: block;
-    margin-top: 10px;
     background: transparent;
     color: white;
-    padding: 5px 0;
-    width: 100px;
+    padding: 10px 0;
     border-radius: 5px;
-    /* margin: 10px auto 0; */
+    width: 100px;
+    margin-top: 10px;
+    /* margin: 10px auto 0; */ */
 }
 
 .container {
-    border: 1px solid red;
+    /* border: 1px solid red; */
     width: 1000px;
     margin: 0 auto;
     display: inherit;
