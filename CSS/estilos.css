@@ -76,11 +76,13 @@ h1{
 }
 
 h1 strong{
-    color: #026fff;
+    /* color: #026fff; */
+    color: #008060;
 }
 
 h2 {
-    color: #026fff;
+    /* color: #026fff; */
+    color: #008060;
     text-transform: uppercase;
     font-family: 'Source Sans Pro', sans-serif ;
     font-weight: bold;
@@ -104,6 +106,7 @@ h2 {
 
 .hero-image {
     object-fit: cover;
+    border-radius: 20px;
     /* width: 500px;
     height: 300px;
     justify-content: space-between; */
@@ -111,7 +114,8 @@ h2 {
 
 
 .portfolio{
-    background-color: #c4bdbd8e;
+    /* background-color: #c4bdbd8e; */
+    background-color: #1b2127;
     padding: 20px;
 }
 .project {
@@ -127,7 +131,8 @@ h2 {
     margin-bottom: 15px;
     /* margin: 10px; */
     padding: 20px;
-    background: white;
+    /* background: white; */
+    background: grey;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -158,10 +163,11 @@ h2 {
 }
 
 .project-details {
-    width: 500px;
+    width: 400px;
 }
 .project-imageContainer {
     width: 500px;
+
 }
 
 .header {
