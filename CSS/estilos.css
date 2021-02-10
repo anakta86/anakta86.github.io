@@ -262,6 +262,7 @@ bacground gris #1b2127 */
 
 .event-list-title {
     margin-left: 20px;
+    background-clip: #1b2127;
     }
 
 .event{
@@ -289,13 +290,18 @@ bacground gris #1b2127 */
     border-radius: 10px;
 }
 
+.event-title {
+    color: #008060;
+}
+
 .event-description {
     /* text-align: left; */
     text-align: center;
+    color:#008060;
 }
 
 .event-url  {
-    color: #056fff;
+    color:#008060;
     border: 1px solid;
     padding: 5px 20px;
     text-decoration: none;
