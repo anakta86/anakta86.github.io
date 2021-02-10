@@ -257,11 +257,12 @@ bacground gris #1b2127 */
 .event-list {
     display: flex;
     flex-wrap: wrap;
+    background-color: #1b2127;
 }
 
 .event-list-title {
     margin-left: 20px;
-}
+    }
 
 .event{
     margin: 10px;
@@ -274,21 +275,23 @@ bacground gris #1b2127 */
 
 .event img {
     width: 480px;
-    height: 200px;
+    height: 500px;
     object-fit: cover;
 }
 
 .event-details {
     margin: 20px 40px;
     margin-top: -40px;
-    background-color: white;
+    background-color: #1b2127;;
     position: relative;
     padding: 20px;
     text-align: center;
+    border-radius: 10px;
 }
 
 .event-description {
-    text-align: left;
+    /* text-align: left; */
+    text-align: center;
 }
 
 .event-url  {
